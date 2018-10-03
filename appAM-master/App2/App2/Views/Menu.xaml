@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Views.Menu"
+             Title="Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Jogadores" Clicked="BotaoJogadoresClicked"></Button>
+            <Button Text="Cadastrar Jogador" Clicked="CadastrarJogadorClicked"></Button>
+            <Button Text="Cadastrar Time" Clicked="CadastrarTimeClicked"></Button>
+            <Button Text="Cadastrar Partida" Clicked="CadastrarPartidaClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

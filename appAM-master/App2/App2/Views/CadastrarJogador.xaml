@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:App2.ViewModel"
+             x:Class="App2.Views.CadastrarJogador"
+             Title="Cadastro de Jogadores">
+
+    <ContentPage.BindingContext>
+        <vm:CadastrarJogadorViewModel></vm:CadastrarJogadorViewModel>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Entry Text="{Binding JogadorSalesForce.Name}" Placeholder="Nome"></Entry>
+                <Entry Text="{Binding JogadorSalesForce.Sobrenome__c}" Placeholder="SobreNome"></Entry>
+                <Entry Text="{Binding JogadorSalesForce.Posicao__c}" Placeholder="Posicao"></Entry>
+                <Entry Text="{Binding JogadorSalesForce.Data_de_nascimento__c}" Placeholder="00/00/1000"></Entry>
+                <Entry Text="{Binding JogadorSalesForce.Time__c}" Placeholder="São Paulo"></Entry>
+                <Entry Text="{Binding JogadorSalesForce.Numero_na_camisa__c}" Placeholder="Numero da camisa"></Entry>
+                <Entry Text="{Binding JogadorSalesForce.Apelido__c}" Placeholder="Apelido"></Entry>
+                <Entry Text="{Binding JogadorSalesForce.Altura__c}" Placeholder="Altura"></Entry>
+                <Button Text="Cadastrar" Command="{Binding CadastrarCommand}"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
